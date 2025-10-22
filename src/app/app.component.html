@@ -1,5 +1,7 @@
 <div class="grid">
     <app-pierwiastek *ngFor="let el of dane" 
         [dane]="el"
-        *ngStyle="{gridColumn: el.xpos, gridRow:el.ypos}"></app-pierwiastek>
+        [style.grid-column]="posx(el)"
+        [style.grid-rows]="posy(el)"
+        ></app-pierwiastek>
 </div>

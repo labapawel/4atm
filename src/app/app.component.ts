@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { SerwisService } from './serwis.service';
 import { PierwiastekComponent } from './pierwiastek/pierwiastek.component';
 import { NgClass, NgFor, NgStyle } from '@angular/common';
+import { Pierwiastek } from './pierwiastek';
 
 @Component({
   selector: 'app-root',
@@ -12,11 +13,19 @@ import { NgClass, NgFor, NgStyle } from '@angular/common';
 })
 export class AppComponent {
  title = 'tm';
-   dane = [];
+   dane: Array<Pierwiastek> = [];
    constructor (private serv:SerwisService){
      serv.sub().subscribe(e=>{
 
        this.dane = e;
      })
+   }
+
+   posx(th:Pierwiastek):number{
+    
+    return th.xpos
+   }
+   posy(th:Pierwiastek):number{
+    return th.ypos;
    }
 }

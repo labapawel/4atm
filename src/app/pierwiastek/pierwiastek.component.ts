@@ -8,5 +8,5 @@ import { Pierwiastek } from '../pierwiastek';
   styleUrl: './pierwiastek.component.scss'
 })
 export class PierwiastekComponent {
- @Input() dane:Pierwiastek = {symbol:""};
+ @Input() dane:Pierwiastek = {symbol:"", xpos:0, ypos:0, wxpos:0, wypos:0};
 }
