@@ -1,0 +1,28 @@
+.pierwiastek {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 3px;
+    // box-shadow: 3px 3px 5px #000;
+
+    &.metal {
+        background-color: aqua;
+    }
+
+    &.diatomic.nonmetal {
+        background-color: yellow;
+    }
+
+    .number {
+        font-size: 20%;
+    }
+    .symbol {
+        text-align: center;
+    }
+
+    .name {
+        font-size: 30%;
+        text-align: center;
+    }
+}

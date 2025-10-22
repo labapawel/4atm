@@ -7,7 +7,7 @@ import { Pierwiastek } from './pierwiastek';
 
 @Component({
   selector: 'app-root',
-  imports: [PierwiastekComponent, NgFor, NgStyle],
+  imports: [PierwiastekComponent, NgFor],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -19,13 +19,5 @@ export class AppComponent {
 
        this.dane = e;
      })
-   }
-
-   posx(th:Pierwiastek):number{
-    
-    return th.xpos
-   }
-   posy(th:Pierwiastek):number{
-    return th.ypos;
-   }
+   }  
 }

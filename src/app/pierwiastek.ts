@@ -4,4 +4,7 @@ export interface Pierwiastek {
     ypos:number
     wxpos:number
     wypos:number
+    number:number
+    name:string
+    category: string
 }
